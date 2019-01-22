@@ -1,0 +1,66 @@
+//buildscript {
+//    repositories {
+//        maven {
+//            url "../lib"
+//        }
+//        mavenCentral()
+//        mavenLocal()
+//    }
+//    dependencies {
+//        classpath 'life.expert:archidoc:1.0.6'
+//    }
+//}
+
+
+plugins {
+    //id 'groovy'
+    id 'java'
+    id 'base'
+    //id 'java-library'
+    id 'application'
+    //id 'idea'
+    id "life.expert.archidoc" version "1.0.7"
+}
+
+
+mainClassName = 'com.my.space.Main'
+
+version '1.0.0'
+
+sourceCompatibility = 1.8
+
+
+println 'hello vov>>>>'
+println sourceSets.main.compileClasspath
+
+def v = sourceSets.main
+//project.tasks.getByName("archidoc").actions.
+
+
+repositories {
+
+    mavenCentral()
+
+    //mavenLocal()
+}
+dependencies {
+    implementation 'org.codehaus.groovy:groovy-all:2.3.11'
+    implementation group:'junit', name:'junit', version:'4.12'
+}
+
+
+//apply plugin : 'life.expert.archidoc'
+
+
+project.tasks.getByName("archidoc").dependsOn 'build', ':subproject:build'
+
+
+archidoc {
+    file "$buildDir/architecture/classdiagram.dot"
+    packages = ['com.my', 'org.your']
+    multiProject()
+    enableAllInfo()
+    verbose()
+}
+
+

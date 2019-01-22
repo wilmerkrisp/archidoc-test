@@ -1,0 +1,16 @@
+digraph {
+size="10.5,8.0";
+layout=dot;
+rankdir="BT";
+overlap=false;
+splines=true;
+pack=true;
+graph [fontname = "Courier, Regular"]
+node [fontname = "Courier, Regular"]
+edge [fontname = "Courier, Regular"]
+"com.my.space.Main"[shape=box,style=filled,fillcolor="#fff2b6",label=<<table border='0' cellborder='0' cellspacing='1'><tr><td>public class</td></tr><tr><td><b>com.my.space.</b></td></tr><tr><td><font point-size='24'><b>Main</b></font></td></tr><tr><td colspan='3' bgcolor='#ccc191'><font point-size='12'><b>FIELDS</b></font></td></tr><tr><td cellpadding='0'><table border='0' cellborder='0'><tr><td align='right' valign='top'> public com.my.space.addit.Zavis</td><td align='left' valign='top'><b>svoistvo</b></td></tr></table></td></tr><tr><td cellpadding='0'><table border='0' cellborder='0'><tr><td colspan='3' bgcolor='#ccc191'><font point-size='12'><b>METHODS</b></font></td></tr><tr><td align='right' valign='top'> public <b>&lt;constructor&gt;</b></td><td align='left' valign='top'><b>Main</b>&nbsp;</td><td align='left' valign='top'>()</td></tr><tr><td align='right' valign='top'> public static void (java.lang.String[])</td><td align='left' valign='top'><b>main</b>&nbsp;</td><td align='left' valign='top'>(java.lang.String[])</td></tr></table></td></tr></table>>];
+"com.my.space.addit.Zavis"[shape=box,style=filled,fillcolor="#fff2b6",label=<<table border='0' cellborder='0' cellspacing='1'><tr><td>public class</td></tr><tr><td><b>com.my.space.addit.</b></td></tr><tr><td><font point-size='24'><b>Zavis</b></font></td></tr><tr><td cellpadding='0'><table border='0' cellborder='0'><tr><td colspan='3' bgcolor='#ccc191'><font point-size='12'><b>METHODS</b></font></td></tr><tr><td align='right' valign='top'> public <b>&lt;constructor&gt;</b></td><td align='left' valign='top'><b>Zavis</b>&nbsp;</td><td align='left' valign='top'>()</td></tr><tr><td align='right' valign='top'> public java.util.Optional&lt;java.lang.String&gt; (java.lang.String)</td><td align='left' valign='top'><b>mymet</b>&nbsp;</td><td align='left' valign='top'>(java.lang.String)</td></tr></table></td></tr></table>>];
+"org.your.space.Main2"[shape=box,style=filled,fillcolor="#fff2b6",label=<<table border='0' cellborder='0' cellspacing='1'><tr><td>public class</td></tr><tr><td><b>org.your.space.</b></td></tr><tr><td><font point-size='24'><b>Main2</b></font></td></tr><tr><td cellpadding='0'><table border='0' cellborder='0'><tr><td colspan='3' bgcolor='#ccc191'><font point-size='12'><b>METHODS</b></font></td></tr><tr><td align='right' valign='top'> public <b>&lt;constructor&gt;</b></td><td align='left' valign='top'><b>Main2</b>&nbsp;</td><td align='left' valign='top'>()</td></tr><tr><td align='right' valign='top'> public static void (java.lang.String[])</td><td align='left' valign='top'><b>main</b>&nbsp;</td><td align='left' valign='top'>(java.lang.String[])</td></tr></table></td></tr></table>>];
+
+  "com.my.space.addit.Zavis" -> "com.my.space.Main" [arrowtail=obox, arrowsize=2.5, dir=back]
+}
